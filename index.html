@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3f2305;
+      }
+      .red-blocks {
+        width: 320px;
+        height: 414px;
+        background-color: #e72f24;
+      }
+      .white-blocks {
+        background-color: #f0f1ec;
+      }
+      .white-1 {
+        width: 401px;
+        height: 414px;
+      }
+      .white-2 {
+        width: 320px;
+        height: 285px;
+      }
+      .white-3 {
+        width: 351px;
+        height: 285px;
+      }
+      .white-4 {
+        width: 50px;
+        height: 175px;
+      }
+      .white-5 {
+        width: 320px;
+        height: 20px;
+      }
+      .yellow-blocks {
+        width: 198px;
+        height: 20px;
+        background-color: #f9d01e;
+      }
+      .black-blocks {
+        width: 153px;
+        height: 20px;
+        background-color: #232629;
+      }
+      .blue-blocks {
+        background-color: #004592;
+        width: 50px;
+        height: 130px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 20px;
+        gap: 3px;
+        background-color: #000;
+      }
+      .white-1 {
+        grid-column: 2 / 5;
+      }
+      .white-2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      .white-3 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column: 2 / 4;
+      }
+      .blue-blocks {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+      .white-4 {
+        grid-row: 3/5;
+        grid-column: 4 / 5;
+      }
+      .yellow-blocks {
+        grid-column: 2/3;
+        grid-row: 4/5;
+      }
+      .black-blocks {
+        grid-area: 4 / 3 / 5 / 4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="red-blocks"></div>
+      <div class="white-blocks white-1"></div>
+      <div class="white-blocks white-2"></div>
+      <div class="white-blocks white-3"></div>
+      <div class="white-blocks white-4"></div>
+      <div class="white-blocks white-5"></div>
+      <div class="blue-blocks"></div>
+      <div class="black-blocks"></div>
+      <div class="yellow-blocks"></div>
+    </div>
+  </body>
+</html>
